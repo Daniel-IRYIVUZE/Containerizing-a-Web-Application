@@ -1,4 +1,4 @@
-# Review Lineup React Todo List
+# Lineup React Todo List
 
 # Overview: 
 The Lineup React Todo List is a minimalist to-do list application built using React and styled with Tailwind CSS and Material UI. It enables users to manage tasks by adding, marking them as complete, and deleting todos.
