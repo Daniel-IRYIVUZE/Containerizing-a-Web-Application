@@ -51,9 +51,9 @@ sudo ./config.sh
 ./config.sh
 OR
 bash config.sh
-- This script will automate Docker image building, container running, and other necessary configurations.
+> This script will automate Docker image building, container running, and other necessary configurations.
 
-4. Access the Application: After Docker configuration, access the application at http://localhost:5173/ in your web browser.
+- Access the Application: After Docker configuration, access the application at http://localhost:5173/ in your web browser.
 
 # Note
 You must have installed Docker before running the configuration script.
