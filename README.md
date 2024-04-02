@@ -13,18 +13,20 @@ git clone https://github.com/Daniel-IRYIVUZE/Containerizing-a-Web-Application.gi
 cd Containerizing-a-Web-Application
 - Install dependencies:
 npm install
+
 # 2.Running the Application:
 
 - To run the application locally:
 npm run dev
 - Access the application at http://localhost:5173/ in your web browser.
+
 # 3. Usage:
 
 - Add a new todo by typing the task in the input field, pressing Enter, or clicking the "Add now" button.
 
 - You can mark a task as completed or progressed by clicking the Update button.
 
-- You can also delete a task by clicking on the delete icon next to it.
+- You can also delete a task by clicking the delete icon next to it.
 
 # 4. Use Docker Image To Test:
 
@@ -32,31 +34,46 @@ npm run dev
 docker pull diryivuze/containerizing_a_web_application:latest
 - Run the Docker container:
 docker run -p 8080:8080 diryivuze/containerizing_a_web_application:latest
-- Access the application at http://localhost:5173/ in your web browser.
-OR:
-- If you wish to configure the Docker settings yourself, follow these steps:
+- Access the application at Local:  http://localhost:8080/ or  Network: http://172.17.0.2:8080/ in your web browser.
+OR: If you wish to configure the Docker settings yourself, follow these steps:
 
 # Usage
-- Clone the Repository:
+
+# 1. Clone the Repository:
 
 git clone https://github.com/Daniel-IRYIVUZE/Containerizing-a-Web-Application.git
-- Navigate to the Project Directory:
 
-cd Containerizing-a-Web-Application
-- Run the Configuration Script: Ensure Docker is installed on your system, And modify the config.sh to match your needs, then execute the following command:
+# 2. Navigate to the Project Directory:
 
-# For Linux Users
+cd Containerizing_a_Web_Application 
+
+# 3. Run the Configuration Script: 
+
+- Ensure Docker is installed on your system, And modify the config.sh to match your needs, then execute the following command:
+
+> For Linux User
+
 sudo ./config.sh
-# For Windows PowerShell User
-./config.sh
-OR
-bash config.sh
-> This script will automate Docker image building, container running, and other necessary configurations.
 
-- Access the Application: After Docker configuration, access the application at http://localhost:5173/ in your web browser.
+> For Windows Users
+
+- with PowerShell terminal
+./config.sh
+
+OR
+
+- with bash terminal 
+config.sh
+
+" This script will automate Docker image building, container running, and other necessary configurations."
+
+# 4. Access the Application:
+
+- After Docker configuration, access the application at  Local:  http://localhost:8080/ or  Network: http://172.17.0.2:8080/ in your web browser.
 
 # Note
-You must have installed Docker before running the configuration script.
+
+- You must have installed Docker before running the configuration script.
 
 # Configuration
 Your vite.config.js should resemble the following:
@@ -71,12 +88,3 @@ export default defineConfig({
     port: 8080
   }
 });
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
