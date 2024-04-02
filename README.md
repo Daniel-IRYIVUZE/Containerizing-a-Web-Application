@@ -34,7 +34,7 @@ npm run dev
 docker pull diryivuze/containerizing_a_web_application:latest
 - Run the Docker container:
 docker run -p 8080:8080 diryivuze/containerizing_a_web_application:latest
-- Access the application at Local:  http://localhost:8080/ or  Network: http://172.17.0.2:8080/ in your web browser.
+- Access the application locally at http://localhost:8080/ in your web browser.
 OR: If you wish to configure the Docker settings yourself, follow these steps:
 
 # Usage
@@ -69,7 +69,7 @@ config.sh
 
 # 4. Access the Application:
 
-- After Docker configuration, access the application at  Local:  http://localhost:8080/ or  Network: http://172.17.0.2:8080/ in your web browser.
+- After Docker configuration, access the application locally at http://localhost:8080/ in your web browser.
 
 # Note
 
