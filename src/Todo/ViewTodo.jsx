@@ -17,9 +17,11 @@ export const ViewTodo = ({ todos, setTodos }) => {
   };
 
   const deleteTodo = (id) => {
-    const newTodos = todos.filter((todo) => todo.id !== id);
-    setTodos(newTodos);
-    saveTodosToLocalStorage(newTodos);
+    if (window.confirm('Do you want to delete this item?')) {
+      const newTodos = todos.filter((todo) => todo.id !== id);
+      setTodos(newTodos);
+      saveTodosToLocalStorage(newTodos);
+    }
   };
 
   const updateTodo = (id) => {
