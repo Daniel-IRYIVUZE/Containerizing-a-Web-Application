@@ -90,3 +90,6 @@ export default defineConfig({
 });
 > # Author
 > Daniel - IRYIVUZE 
+
+- Demo Slides: https://www.canva.com/design/DAGBXATQS2M/lWtq-QV_ILWC2_IloXQ4gA/edit?utm_content=DAGBXATQS2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+- Docker Preview: https://hub.docker.com/repository/docker/diryivuze/containerizing_a_web_application/
