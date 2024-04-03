@@ -1,7 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
-    background-color: rgb(191, 193, 221);
 
+body {
+    background-color: rgb(191, 193, 221);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.footer {
+    background-color: #00000093;
+    color: #2e2b38;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
